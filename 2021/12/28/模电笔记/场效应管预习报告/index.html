@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-lufi.ico?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-lufi.ico?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="场效应管自学笔记," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="场效应管场效应管是利用输入回路的电场效应来控制输出回路电流的一种半导体器件。具体怎么控制的，后面再讲。 场效应管的导电特点是：利用多数载流子的定向运动进行导电，因此又称为单极型晶体管。 场效应管按照结构来分类有两种，分别是结型场效应管和绝缘栅型场效应管，下面对这两种场效应管的工作原理、特性以及主要参数进行介绍。 结型场效应管结型场效应管按照其组成的特点又有两种：N沟道和P沟道。什么是N沟道，什么是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="场效应管">
+<meta property="og:url" content="http://ycloong.github.io/2021/12/28/%E6%A8%A1%E7%94%B5%E7%AC%94%E8%AE%B0/%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E9%A2%84%E4%B9%A0%E6%8A%A5%E5%91%8A/index.html">
+<meta property="og:site_name" content="ycloong&#39;s blog">
+<meta property="og:description" content="场效应管场效应管是利用输入回路的电场效应来控制输出回路电流的一种半导体器件。具体怎么控制的，后面再讲。 场效应管的导电特点是：利用多数载流子的定向运动进行导电，因此又称为单极型晶体管。 场效应管按照结构来分类有两种，分别是结型场效应管和绝缘栅型场效应管，下面对这两种场效应管的工作原理、特性以及主要参数进行介绍。 结型场效应管结型场效应管按照其组成的特点又有两种：N沟道和P沟道。什么是N沟道，什么是">
+<meta property="og:locale">
+<meta property="og:image" content="https://s2.loli.net/2021/12/27/iKNPMms8kQouRVx.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/6a5Yv79LGWs14Kj.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/XC1fDJEs79nZtGb.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/iJ5BLu3T2DrP8vp.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/QbJfE6XDI24SaL1.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/BmAasDeo5j9Eqw3.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/b5JfBp2ja3dtUzi.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/W1Twg3hmpIHAYDZ.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/oTVcgnzC2DJh3wI.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/j3vm1d8yRIqGNuw.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/tnB2y9CXSlfoaJz.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/H3Y6OwmB4Jg2xzr.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/QB4txleR7T8YifJ.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/SdZAiJh8cCwbf9G.png">
+<meta property="og:image" content="https://s2.loli.net/2021/12/28/zykGmxgerCPutcF.png">
+<meta property="article:published_time" content="2021-12-28T12:40:03.000Z">
+<meta property="article:modified_time" content="2022-05-07T07:02:28.964Z">
+<meta property="article:author" content="ycloong">
+<meta property="article:tag" content="场效应管自学笔记">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s2.loli.net/2021/12/27/iKNPMms8kQouRVx.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '',
+    scheme: 'Mist',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true,"dimmer":true},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://ycloong.github.io/2021/12/28/模电笔记/场效应管预习报告/"/>
+
+
+
+
+
+  <title>场效应管 | ycloong's blog</title>
+  
+
+
+
+
+
+
+
+
+<meta name="generator" content="Hexo 5.4.1"></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">ycloong's blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://ycloong.github.io/2021/12/28/%E6%A8%A1%E7%94%B5%E7%AC%94%E8%AE%B0/%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E9%A2%84%E4%B9%A0%E6%8A%A5%E5%91%8A/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ycloong's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">场效应管</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2021-12-28T20:40:03+08:00">
+                2021-12-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E6%A8%A1%E7%94%B5%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
+                    <span itemprop="name">模电笔记</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2021/12/28/%E6%A8%A1%E7%94%B5%E7%AC%94%E8%AE%B0/%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E9%A2%84%E4%B9%A0%E6%8A%A5%E5%91%8A/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2021/12/28/%E6%A8%A1%E7%94%B5%E7%AC%94%E8%AE%B0/%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E9%A2%84%E4%B9%A0%E6%8A%A5%E5%91%8A/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  3.7k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  13
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="场效应管"><a href="#场效应管" class="headerlink" title="场效应管"></a>场效应管</h1><p><strong>场效应管是利用输入回路的电场效应来控制输出回路电流的一种半导体器件。</strong>具体怎么控制的，后面再讲。</p>
+<p>场效应管的导电特点是：利用多数载流子的定向运动进行导电，因此又称为单极型晶体管。</p>
+<p>场效应管按照结构来分类有两种，分别是<strong>结型场效应管和绝缘栅型场效应管</strong>，下面对这两种场效应管的工作原理、特性以及主要参数进行介绍。</p>
+<h1 id="结型场效应管"><a href="#结型场效应管" class="headerlink" title="结型场效应管"></a>结型场效应管</h1><p>结型场效应管按照其组成的特点又有两种：<strong>N沟道</strong>和<strong>P沟道</strong>。什么是N沟道，什么是P沟道？其实就像三极管的<code>NPN</code>和<code>PNP</code>类型一样，下面用<strong>N沟道</strong>的场效应管的结构示意图来进一步说明。</p>
+<p><img src="https://s2.loli.net/2021/12/27/iKNPMms8kQouRVx.png" alt="image-20211227205315117"></p>
+<p>我们看，两块P型半导体夹着一块N型半导体，那么两种半导体的交界面处必然就会产生<strong>PN结</strong>，就类似于三极管一样，同样也会产生耗尽层，耗尽层我们知道，里面只有少量的少子，导电是不可能用它来导电的，那么场效应管怎么导电呢？我们上面说了，场效应管的导电特点是利用多子进行导电，那么，在上面的图中，哪里才有多子？是不是两个耗尽层中间的N型半导体区域？那它怎么导电的？很简单，当我们在上图中D和S两端加上电压，N型半导体里面的多子是不是就会产生定向移动了？那电流就产生了。</p>
+<p>那我们这时候看，导电的区域是不是就像形成一条通道一样？那我们就把这条通道就做<strong>导电沟道</strong>。然后导电的区域属于N型半导体区域，那我们<strong>N沟道</strong>的名词就出来了。同样的，如果是两块N型半导体中间夹着一块P型半导体，那么同样按照上面的分析，我们这是就是利用P型半导体里面的多子进行导电，我们就称它为<strong>P沟道</strong>结型场效应管。也就是说，N型半导体导电就叫N沟道，P型半导体导电就叫P沟道。</p>
+<h2 id="参数介绍"><a href="#参数介绍" class="headerlink" title="参数介绍"></a>参数介绍</h2><p>那既然已经把导电沟道讲了，那我们把图中的其他参数也一起介绍一下吧。</p>
+<p>G：栅极（类似于三极管的B）</p>
+<p>S：源极（类似于三极管的E）</p>
+<p>D：漏极（类似于三极管的C）</p>
+<p>调节G-S之间的反向电压，可以调节耗尽层的宽度，进而影响导电沟道的大小，从而影响通过电流的大小，对电流起阻碍作用。</p>
+<p>调节D-S之间的电压，就是调节驱动多子运动的电压，电压增大，电流增大。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><p>大致的原理我们在上面已经讲得差不多了，下面我们就具体的讲一下它是怎么控制输出电流的。</p>
+<p>我们上面讲到了，控制通过场效应管的电流有两种方法:控制$U<em>{GS}$和$U</em>{DS}$ ，那我们来用控制变量法来分析一下吧。</p>
+<h3 id="首先，我们先不给D-S两端加电压，只调节G-S两端电压"><a href="#首先，我们先不给D-S两端加电压，只调节G-S两端电压" class="headerlink" title="首先，我们先不给D-S两端加电压，只调节G-S两端电压"></a>首先，我们先不给D-S两端加电压，只调节G-S两端电压</h3><ol>
+<li><p>当$U_{GS}=0$时，只有PN结自己形成的耗尽层，很小，所以此时导电沟道很宽。</p>
+</li>
+<li><p>逐渐增大$U_{GS}$,由于在PN结两端加了反向电压，就像下图一样P区的正电荷在外加电场的作用下往左边走，N区的负电荷往右边聚拢，所以中间的耗尽层就会变宽，然后导电沟道就会变窄。</p>
+</li>
+</ol>
+<p><img src="https://s2.loli.net/2021/12/28/6a5Yv79LGWs14Kj.png" alt="image-20211228092716420"></p>
+<ol>
+<li>我们继续增大$U<em>{GS}$,那么耗尽层也会同时增大，我们不难想到会有这种情况，那就是两边的耗尽层刚好把夹在中间的N型半导体区域完全占据了，这时候我的导电沟道就不存在了，也就没法导电了，我们称这种现象为<strong>夹断</strong>，刚好出现夹断现象的电压$U</em>{GS}$叫做夹断电压，记作$U_{GS(off)}$。</li>
+</ol>
+<p>   以上三种情况的场效应管的变化结构示意图如下：</p>
+<blockquote>
+<p>图片来自清华大学华成英课件</p>
+</blockquote>
+<p>   <img src="https://s2.loli.net/2021/12/28/XC1fDJEs79nZtGb.png" alt="image-20211228094110479"></p>
+<h4 id="电阻特性"><a href="#电阻特性" class="headerlink" title="电阻特性"></a>电阻特性</h4><p>我们再来分析上面的三种情况，如果我们在D-S两端加以一定的电压，也就是让导电沟道有电流存在。那么，当$U_{GS}$产生上述的变化时，也就是从0开始逐渐增大，导电沟道的电流会产生什么变化呢？我们已经说过，场效应管导电主要是利用了外加电场对多子的驱动，我们的N沟道结型场效应管就是利用了负电荷的定向移动产生电流，所以这个原理和金属导体导电的原理是一样的。</p>
+<p>所以，当我们的沟道变窄的时候，是不是相当于金属导体的导电横截面积变小，那么，我们的单位时间流过导电沟道的电子就变少，电流就变小。所以，我们看，此时场效应管的导电特性是不是和线性电阻是一样的！</p>
+<p>也就是说，当场效应管没有产生夹断现象的时候，它呈现的是电阻特性。</p>
+<h3 id="给G-S两端加一定电压，调节D-S两端电压"><a href="#给G-S两端加一定电压，调节D-S两端电压" class="headerlink" title="给G-S两端加一定电压，调节D-S两端电压"></a>给G-S两端加一定电压，调节D-S两端电压</h3><p>好，刚才我们是保持$U<em>{DS}$不变，改变$U</em>{GS}$，那这次我们换一下。我们给$U<em>{GS}$一定的电压，它大于0又不会产生夹断现象就行了，我们改变$U</em>{DS}$。</p>
+<p>我们从0开始增大$U_{DS}$,我们知道，只要不夹断，效应管就相当于电阻，那么电阻两端的电压越大，电流自然也就越大。</p>
+<p>那么，$U_{DS}$可以无限大的大吗？既然这么问了，那也就是说明它大概率是不可能的是吧，那我们下面分析一下原因。</p>
+<p>我们要注意到，我们加电压的时候，我们的S端是公共端并且是接地的。那么也就是说，我们的电位$U_G<0$,而$U_D>0$。那么，G和D之间的PN结也是反偏状态的，和上面的图差不多，这里把它搬下来。</p>
+<p><img src="https://s2.loli.net/2021/12/28/iJ5BLu3T2DrP8vp.png" alt="image-20211228101251935"></p>
+<p>当$U_G$不断增大的时候，G和D之间形成的耗尽层也会越来越宽，就像下面这样子</p>
+<p><img src="https://s2.loli.net/2021/12/28/QbJfE6XDI24SaL1.png" alt="image-20211228101517972"></p>
+<p>当$U_G$再增大，上面就会出现全是耗尽层的情况，也就是这样子：</p>
+<p><img src="https://s2.loli.net/2021/12/28/BmAasDeo5j9Eqw3.png" alt="image-20211228101646014"></p>
+<p>我们把这种情况叫做<strong>预夹断</strong>，很明显，这时候$U<em>{GS}=U</em>{GS(off)}$</p>
+<p>那我们此时再增大$U_{D}$,情况会怎么样呢？这样耗尽层的宽度就会逐渐变宽，把下面没有夹断的区域慢慢的进行覆盖，就像下面这样：</p>
+<p><img src="https://s2.loli.net/2021/12/28/b5JfBp2ja3dtUzi.png" alt="image-20211228103115881"></p>
+<p>那我们就来分析一下着这种情况下的电流情况。</p>
+<h4 id="恒流特性"><a href="#恒流特性" class="headerlink" title="恒流特性"></a>恒流特性</h4><p>在部分夹断的情况下，我们的电流只能从两边的耗尽层的中间缝隙中通过，为什么呢？因为两边的耗尽层都是正离子，左右两边产生的电场相同，不能把电子吸引到具体的哪一边。</p>
+<p>那么，在这种情况下，我再增大$U_D$，电流情况会发生什么样的变化呢？</p>
+<p>我们按照上面的分析，知道，此时增大$U_D$,自然纵向电场增强，电流理应变大。</p>
+<p>但是，增大$U_D$的时候，夹断区也同时会变大，电子运动的阻力变大，电流理应变小。</p>
+<p>那到底是变大还是变小呢？事实上，电流的大小是不变的。上面的两种趋势相互抵消，造成的结果是电流既不变大也不变小，而是保持着恒定的大小。这是我们从外部来看，电流$i_D$的变化与$U_D$无关，表现出恒流特性。</p>
+<p>这时候，电流的变化就只与$U<em>{GS}$的大小有关了，也就是$U</em>{GS}$控制电流$i_D$。这就是我们场效应管的特性：利用输入回路的电场效应来控制输出回路电流。</p>
+<h2 id="结型场效应管的特性曲线"><a href="#结型场效应管的特性曲线" class="headerlink" title="结型场效应管的特性曲线"></a>结型场效应管的特性曲线</h2><p>我们上面已经把结型场效应管的各个情况下的工作原理进行了说明，下面让我们在来了解一下它的特性曲线，就相当于对上面的内容进行的一个总结。</p>
+<h3 id="输出特性曲线"><a href="#输出特性曲线" class="headerlink" title="输出特性曲线"></a>输出特性曲线</h3><p>输出特性曲线反映的是当$U<em>{GS}$一定的情况下，输出电流和电压$U</em>{DS}$之间的关系。这里先给出曲线：</p>
+<p><img src="https://s2.loli.net/2021/12/28/W1Twg3hmpIHAYDZ.png" alt="image-20211228105710242"></p>
+<p>我们先分析一条曲线，就拿$U_{GS}=-1V$这条曲线来分析。</p>
+<p>当$U_{DS}$为0时，$i_D$为0。</p>
+<p>当$U_{DS}$慢慢增大，但是还没有达到预夹断状态，此时结型场效应管呈现电阻特性，电压增大，电流增大。</p>
+<p>当出现预夹断时，再增大$U_{DS}$，电流$i_D$大小不变，呈现恒流特性。</p>
+<p>曲线特性符合我们的分析情况。</p>
+<p>那我们再来看一下当$U<em>{DS}$不变的时候，改变$U</em>{GS}$符不符合我们的分析。</p>
+<p>当$U<em>{G}$不断变大，$U</em>{GS}$不断变小，耗尽层变宽，导电沟道变窄，电流变小，图中曲线符号我们的分析。</p>
+<p>当$U<em>G$不断变大，使得$U</em>{GS}=U_{GS(off)}$的时候，场效应管出现夹断，电流近乎为0。图中曲线也符合。</p>
+<p>所以，上面的特征曲线就是我们结型场效应管的输出特性曲线。</p>
+<h3 id="转移特性曲线"><a href="#转移特性曲线" class="headerlink" title="转移特性曲线"></a>转移特性曲线</h3><p>转移特性曲线反映的是当$U<em>{DS}$一定并且场效应管工作在恒流区的时候（即$U</em>{GD}&lt;U<em>{GS(off)}$），输出电流和$U</em>{GS}$之间的关系。</p>
+<p>其实这个我们上面输出特性也有分析过了，就是在$U<em>{DS}$一定的情况下，把每一点$i_D$对应的$U</em>{GS}$的值映射到坐标平面内然后连线即可。</p>
+<p><img src="https://s2.loli.net/2021/12/28/oTVcgnzC2DJh3wI.png" alt="image-20211228111944157"></p>
+<h1 id="绝缘栅型场效应管"><a href="#绝缘栅型场效应管" class="headerlink" title="绝缘栅型场效应管"></a>绝缘栅型场效应管</h1><p>绝缘栅型场效应管的栅极与源极、栅极和漏极之间均采用$SiO_2$绝缘层隔离，因此得名。又因为栅极为金属铝，故又称为MOS管（Metal-Oxide-Semiconductor）。</p>
+<p>MOS管也有N沟道和P沟道两类，但是按照组成结构的不同，它们又有<strong>增强型</strong>和<strong>耗尽型</strong>两种。</p>
+<p>下面我们以N沟道的MOS管为例，分别讲讲增强型和耗尽型MOS管的特性以及它们的工作原理。</p>
+<p>首先，我们先明确一下：</p>
+<p>当$U_{GS}=0$时，漏极电流也为0，我们把这种管子就做增强型管。</p>
+<p>当$U_{GS}=0$时，漏极电流不为0，我们把这种管子叫做耗尽型管。</p>
+<p>为什么？我也不知道。</p>
+<h2 id="N沟道增强型MOS管"><a href="#N沟道增强型MOS管" class="headerlink" title="N沟道增强型MOS管"></a>N沟道增强型MOS管</h2><h3 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h3><p>它以一块低参杂的P型半导体作为衬底，做两块高参杂的$N^{+}$区域，并引出两个极：s和d，然后半导体上加一块$SiO_2$绝缘层，再在上面加一块铝片引出电极g。结构和符号就像下图这样子。</p>
+<p><img src="https://s2.loli.net/2021/12/28/j3vm1d8yRIqGNuw.png" alt="image-20211228163023101"></p>
+<h3 id="工作原理-1"><a href="#工作原理-1" class="headerlink" title="工作原理"></a>工作原理</h3><p>绝缘栅型场效应管的导电机制和结型场效应管的是不一样的，我们结型场效应管是利用衬底的多子定向运动导电。而MOS管是利用衬底的少子进行导电。具体原理马上就讲。</p>
+<p>那好，我们先来判断这个是什么管子，$U_{GS}$为0，s和d之间不能导电，也就是漏极电流为0，所以这是增强型MOS管。我想，它叫增强型，应该就是需要外部力量来对它进行加强，然后才能进行工作吧。</p>
+<p>好，我们来分析它的工作原理。</p>
+<p>当给g端加i一个正向电压时，因为有绝缘层的存在，铝片和衬底之间就形成了一个电容，那么铝片上就会积累正电荷，那么就会把衬底中靠近栅极（g）的空穴排斥到下面去，同时会把衬底下面的少子吸引聚集到绝缘板上。那么，空穴被排斥走了就只剩下带负电的离子在哪里了，也就形成了耗尽层。然后，少子在贴着栅极的绝缘板上积聚，当$U_{GS}$足够大时，少子就聚集的足够多，因为少子电性和负离子相同，它们会将耗尽层向下排挤那么一点距离，那么就在绝缘板和耗尽层之间就形成一层少子（也就是电子）的区域，也就是导电沟道，我们把它就做<strong>反型层</strong>。那么这时，s和d之间就可以进行导电啦。</p>
+<p>（注意：这里反型层的出现原因是我自己加上去的，属于个人理解，不具备权威性）</p>
+<p>我们把这个刚好能够形成导电沟道的电压$U<em>{GS}$叫做开启电压$U</em>{GS(th)}$，很明显的，$U<em>{GS}&gt;U</em>{GS(th)}$时，$U_{GS}$越大，导电沟道（也就是反型层）就越宽。</p>
+<p>当我们固定住$U<em>{GS}$，给d和s两端加上一个正向电压，就会产生一个漏极电流。随着$U</em>{DS}$增大，电流也会增大，但是$U<em>{DS}$并不能无线增大，为什么？我们不难发现，形成导电沟道之后，$U</em>{DS}$对漏极电流的影响和结型场效应管的差不多。因为当你在d端加正向电压时，就相当于在右边的PN结两端加了反向电压，那么，靠近d端的耗尽层是会变宽的，那么，沟道就会变窄，电压达到一定的时候，就会产生夹断。那么接下来的分析就和结型场效应管的分析时一摸一样的了。这里给出给出变化趋势图。</p>
+<p><img src="https://s2.loli.net/2021/12/28/tnB2y9CXSlfoaJz.png" alt="image-20211228165910889"></p>
+<h4 id="特性曲线"><a href="#特性曲线" class="headerlink" title="特性曲线"></a>特性曲线</h4><p><img src="https://s2.loli.net/2021/12/28/H3Y6OwmB4Jg2xzr.png" alt="image-20211228170635614"></p>
+<h2 id="N沟道耗尽型场效应管"><a href="#N沟道耗尽型场效应管" class="headerlink" title="N沟道耗尽型场效应管"></a>N沟道耗尽型场效应管</h2><h3 id="结构-1"><a href="#结构-1" class="headerlink" title="结构"></a>结构</h3><p>耗尽型MOS管和增强型差不多，但是增强型只有在$U<em>{GS}&gt;U</em>{GS(th)}$时才有反型层。而耗尽型不需要，为什么？因为耗尽型在SiO_2绝缘层中掺入了大量的正离子，在正离子的作用下P型衬底表面也存在反型层。下面给出它的结构图和符号。</p>
+<p><img src="https://s2.loli.net/2021/12/28/QB4txleR7T8YifJ.png" alt="image-20211228171347665"></p>
+<h3 id="工作原理-2"><a href="#工作原理-2" class="headerlink" title="工作原理"></a>工作原理</h3><p>当$U<em>{GS}$为正时，增大$U</em>{GS}$反型层变宽。</p>
+<p>当$U<em>{GS}$为负时，增大$U</em>{GS}$,反型层变窄，当$U_{GS}$小到一定程度时，反型层消失。</p>
+<p>其他的工作和增强型MOS管相同。</p>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p><img src="https://s2.loli.net/2021/12/28/SdZAiJh8cCwbf9G.png" alt="image-20211228172546919"></p>
+<p><img src="https://s2.loli.net/2021/12/28/zykGmxgerCPutcF.png" alt="image-20211228173753533"></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E8%87%AA%E5%AD%A6%E7%AC%94%E8%AE%B0/" rel="tag"># 场效应管自学笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2021/12/20/%E9%9A%8F%E7%AC%94/%E5%8B%BF%E5%BF%98%E5%BF%83%E5%AE%89/" rel="next" title="勿忘心安">
+                <i class="fa fa-chevron-left"></i> 勿忘心安
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2022/05/07/%E9%9A%8F%E7%AC%94/test/" rel="prev" title="test">
+                test <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+      <div id="sidebar-dimmer"></div>
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name"></p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">25</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">19</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1"><span class="nav-number">1.</span> <span class="nav-text">场效应管</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%93%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1"><span class="nav-number">2.</span> <span class="nav-text">结型场效应管</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%8F%82%E6%95%B0%E4%BB%8B%E7%BB%8D"><span class="nav-number">2.1.</span> <span class="nav-text">参数介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="nav-number">2.2.</span> <span class="nav-text">工作原理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%A6%96%E5%85%88%EF%BC%8C%E6%88%91%E4%BB%AC%E5%85%88%E4%B8%8D%E7%BB%99D-S%E4%B8%A4%E7%AB%AF%E5%8A%A0%E7%94%B5%E5%8E%8B%EF%BC%8C%E5%8F%AA%E8%B0%83%E8%8A%82G-S%E4%B8%A4%E7%AB%AF%E7%94%B5%E5%8E%8B"><span class="nav-number">2.2.1.</span> <span class="nav-text">首先，我们先不给D-S两端加电压，只调节G-S两端电压</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%94%B5%E9%98%BB%E7%89%B9%E6%80%A7"><span class="nav-number">2.2.1.1.</span> <span class="nav-text">电阻特性</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%99G-S%E4%B8%A4%E7%AB%AF%E5%8A%A0%E4%B8%80%E5%AE%9A%E7%94%B5%E5%8E%8B%EF%BC%8C%E8%B0%83%E8%8A%82D-S%E4%B8%A4%E7%AB%AF%E7%94%B5%E5%8E%8B"><span class="nav-number">2.2.2.</span> <span class="nav-text">给G-S两端加一定电压，调节D-S两端电压</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%81%92%E6%B5%81%E7%89%B9%E6%80%A7"><span class="nav-number">2.2.2.1.</span> <span class="nav-text">恒流特性</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1%E7%9A%84%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF"><span class="nav-number">2.3.</span> <span class="nav-text">结型场效应管的特性曲线</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BE%93%E5%87%BA%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF"><span class="nav-number">2.3.1.</span> <span class="nav-text">输出特性曲线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BD%AC%E7%A7%BB%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF"><span class="nav-number">2.3.2.</span> <span class="nav-text">转移特性曲线</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BB%9D%E7%BC%98%E6%A0%85%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1"><span class="nav-number">3.</span> <span class="nav-text">绝缘栅型场效应管</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#N%E6%B2%9F%E9%81%93%E5%A2%9E%E5%BC%BA%E5%9E%8BMOS%E7%AE%A1"><span class="nav-number">3.1.</span> <span class="nav-text">N沟道增强型MOS管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%84"><span class="nav-number">3.1.1.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86-1"><span class="nav-number">3.1.2.</span> <span class="nav-text">工作原理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E6%80%A7%E6%9B%B2%E7%BA%BF"><span class="nav-number">3.1.2.1.</span> <span class="nav-text">特性曲线</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#N%E6%B2%9F%E9%81%93%E8%80%97%E5%B0%BD%E5%9E%8B%E5%9C%BA%E6%95%88%E5%BA%94%E7%AE%A1"><span class="nav-number">3.2.</span> <span class="nav-text">N沟道耗尽型场效应管</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%BB%93%E6%9E%84-1"><span class="nav-number">3.2.1.</span> <span class="nav-text">结构</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86-2"><span class="nav-number">3.2.2.</span> <span class="nav-text">工作原理</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">4.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">ycloong</span>
+
+  
+</div>
+
+<!--
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Mist</a> v5.1.4</div>
+-->
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'vE8F5rhx43YMqo8XKqba3G4g-gzGzoHsz',
+        appKey: 'Kgds5yGqtgJeNTt8QzeBfG86',
+        placeholder: '欢迎留下您的建议哦~',
+        enableQQ: '<%= theme.valine.enableQQ %>', 
+        requiredFields: ['mail'],
+        avatar:'monsterid',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+</body>
+</html>
